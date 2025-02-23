@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "32727776-c4d1-4e7f-92b1-fd3895429726",
+		"name": "book-management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2947458",
+		"_collection_link": "https://martian-firefly-376415.postman.co/workspace/Aeturnum~f9a2814f-6230-4dfd-bbe7-3c418108de62/collection/2947458-32727776-c4d1-4e7f-92b1-fd3895429726?action=share&source=collection_link&creator=2947458"
+	},
+	"item": [
+		{
+			"name": "Save New Book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Harry huuuu\",\n    \"author\": \"JK Rowling\",\n    \"publishedDate\": \"2025-02-17\",\n    \"isbn\": \"3453534534534534\",\n    \"description\": \"hahahahaha\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/books",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/books",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Book By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/books",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Book By Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/books/6367994284646641926",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"books",
+						"6367994284646641926"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Book By Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/books/3166326718254318158",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"books",
+						"3166326718254318158"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
